@@ -33,16 +33,28 @@ const App = () => {
 
       // ACTION ITEM: your Pig Latin logic goes here!
       //We are adding on more logic here
+
+
+
       
       if (vowelsArray.length > 0) {
+        // story 1: Check if the word starts with a vowel
         if (vowelsArray[0] === eachWord[0]) {
+
+          // story 1: If it starts with a vowel, add "way" to the end of the word
           eachWord = eachWord + "way";
+
+          // story 2: If the word starts with "qu", move "qu" to the end and add "ay"
         } else if (eachWord.substring(0, 2) === "qu") {
-          // Handle words starting with "qu"
-          eachWord = eachWord.substring(2) + "quay";
+          eachWord = eachWord.substring(2) + "quay";                 
         } else {
           eachWord = eachWord.slice(1) + eachWord[0] + "ay";
-        }
+        }  
+
+        //story 3: this is what we came up with so far
+      } else {
+        eachWord = eachWord.indexOf("y") + "ay";
+        
       }
       
 
