@@ -64,6 +64,14 @@ To get started, find the `myPigLatinCodeHere` function, and write your code. Eve
 ### 🐽 Pig Latin Challenge
 
 **Story 1**: In order to see English words converted to Pig Latin, as the user of the application, I need to see words beginning with a vowel translated to add "way" to the end.
+<!-- psudo code -->
+check word to see if it starts with a vowel
+if true, add "way" to the end of the word
+if false, it searches for the first vowel and moves the consonants before the vowel to the end of the word and adds "ay" to the end
+if no vowels are found it will return the word as is
+create another function named inputChange = inputWord State
+create another function named handleTranslate to call convertToPigLatin and update the pigLatinWord State with the pig latin translation
+
 
 **Branch:** vowel-functionality
 
