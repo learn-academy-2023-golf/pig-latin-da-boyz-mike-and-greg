@@ -99,6 +99,9 @@ if true, move all the consonants and the "u" to the end and add "ay"
 - Can see the words that have a "qu" in the first syllable translated to Pig Latin and rendered to the page (e.g. ealsquay)
 
 **Story 3**: In order to see English words converted to Pig Latin, as the user of the application, I need to see words that have no vowels other than "y" translated by moving all the consonants to the end and adding "ay".
+<!-- psuedo code -->
+check for words that have no vowels and only have "y"
+if true move all consonants to the end and add "ay"
 
 **Branch:** y-functionality
 
