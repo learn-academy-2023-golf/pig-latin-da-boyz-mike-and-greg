@@ -33,13 +33,15 @@ const App = () => {
 
       // ACTION ITEM: your Pig Latin logic goes here!
       //We are adding on more logic here
-      // let translatedWord = eachWord
-
-      if(vowelsArray.length > 0) {
-        if(vowelsArray[0] === eachWord[0]) {
-         eachWord = eachWord + "way"
+      
+      if (vowelsArray.length > 0) {
+        if (vowelsArray[0] === eachWord[0]) {
+          eachWord = eachWord + "way";
+        } else if (eachWord.substring(0, 2) === "qu") {
+          // Handle words starting with "qu"
+          eachWord = eachWord.substring(2) + "quay";
         } else {
-         eachWord = eachWord.slice(1) + eachWord[0] + "ay"
+          eachWord = eachWord.slice(1) + eachWord[0] + "ay";
         }
       }
       
